@@ -28,7 +28,7 @@ void dictionnaire::ouvrir(string ods6, uint32_t taille_mot)
 		{
 		  if(ligne.length() == taille_mot)
       {
-        map_dictionnaire.insert( std::pair<uint32_t,mot>(index,ligne)) ;
+        map_dictionnaire.insert( std::pair<uint32_t,mot>(index,mot(ligne)) ;
       }
 		}
 		fichier.close();
