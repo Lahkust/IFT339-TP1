@@ -51,3 +51,4 @@ obj/Debug/dictionnaire.o
 *.save
 *.depend
 *.o
+*.depend
