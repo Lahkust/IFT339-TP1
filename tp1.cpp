@@ -73,7 +73,7 @@ int main()
 //
 //  }while(c_essaie != '#');
 
-  system("pause");
+  int i; cin >> i;
   return 0;
 }
 

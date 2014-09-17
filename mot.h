@@ -4,12 +4,14 @@
 #include <string>
 using namespace std;
 
-class mot : public string
+class mot
 {
+
+private :
 
 public:
 
-
+ string value;
     bool operator==(mot);
     mot(void);
     mot(string);
