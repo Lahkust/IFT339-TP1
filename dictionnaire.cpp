@@ -28,6 +28,7 @@ void dictionnaire::ouvrir(string ods6, uint32_t taille_mot)
 		{
 		  if(ligne.length() == taille_mot)
       {
+
         map_dictionnaire[index] = mot(ligne);
       }
 		}

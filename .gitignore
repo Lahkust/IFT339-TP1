@@ -44,3 +44,10 @@ Icon
 bin/Debug/2_TP1.exe
 obj/Debug/dictionnaire.o
 *.o
+obj/Debug/tp1.o
+obj/Debug/tp1.o
+obj/Debug/dictionnaire.o
+2_TP1.depend
+*.save
+*.depend
+*.o

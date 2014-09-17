@@ -36,8 +36,6 @@
 		<Unit filename="dictionnaire.cpp" />
 		<Unit filename="dictionnaire.h" />
 		<Unit filename="librairie.h" />
-		<Unit filename="manipulateur.cpp" />
-		<Unit filename="manipulateur.h" />
 		<Unit filename="mot.cpp" />
 		<Unit filename="mot.h" />
 		<Unit filename="tp1.cpp" />
