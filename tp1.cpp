@@ -1,6 +1,5 @@
 #include "librairie.h"
 #include "dictionnaire.h"
-#include "manipulateur.h"
 #include "mot.h"
 
 

@@ -23,14 +23,16 @@
 1410805728 source:d:\github\ift339-tp1\mot.cpp
 	"mot.h"
 
-1410805717 d:\github\ift339-tp1\mot.h
+1410976505 d:\github\ift339-tp1\mot.h
 	<string>
 
-1410802722 source:d:\github\ift339-tp1\tp1.cpp
+1410975970 source:d:\github\ift339-tp1\tp1.cpp
 	"librairie.h"
+	"dictionnaire.h"
+	"manipulateur.h"
 	"mot.h"
 
-1410805158 d:\github\ift339-tp1\librairie.h
+1410807911 d:\github\ift339-tp1\librairie.h
 	<stdio.h>
 	<tchar.h>
 	<iostream>
@@ -41,14 +43,14 @@
 	<list>
 	"time.h"
 
-1410975937 source:d:\github\ift339-tp1\dictionnaire.cpp
+1410976554 source:d:\github\ift339-tp1\dictionnaire.cpp
 	<fstream>
 	<iostream>
 	<map>
 	<string>
 	"dictionnaire.h"
 
-1410803705 d:\github\ift339-tp1\dictionnaire.h
+1410976619 d:\github\ift339-tp1\dictionnaire.h
 	<map>
 	<set>
 	"mot.h"
