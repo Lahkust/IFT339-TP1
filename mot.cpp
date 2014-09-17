@@ -14,9 +14,9 @@ bool mot::operator==(mot m)
 {
 }
 
-mot::mot(string)
+mot::mot(string val)
 {
-
+  value = val;
 }
 
 mot::mot(uint32_t)

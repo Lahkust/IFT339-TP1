@@ -60,3 +60,37 @@
 	<string>
 	"mot.h"
 
+1410982029 source:c:\users\hugo\documents\codeblocks\tp1\ift339-tp1\dictionnaire.cpp
+	<fstream>
+	<iostream>
+	<map>
+	<string>
+	"dictionnaire.h"
+
+1410978623 c:\users\hugo\documents\codeblocks\tp1\ift339-tp1\dictionnaire.h
+	<map>
+	<set>
+	"mot.h"
+
+1410981150 c:\users\hugo\documents\codeblocks\tp1\ift339-tp1\mot.h
+	<string>
+
+1410980182 source:c:\users\hugo\documents\codeblocks\tp1\ift339-tp1\mot.cpp
+	"mot.h"
+
+1410980232 source:c:\users\hugo\documents\codeblocks\tp1\ift339-tp1\tp1.cpp
+	"librairie.h"
+	"dictionnaire.h"
+	"mot.h"
+
+1410978623 c:\users\hugo\documents\codeblocks\tp1\ift339-tp1\librairie.h
+	<stdio.h>
+	<tchar.h>
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<map>
+	<list>
+	"time.h"
+

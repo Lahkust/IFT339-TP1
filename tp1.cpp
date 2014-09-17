@@ -1,6 +1,5 @@
 #include "librairie.h"
 #include "dictionnaire.h"
-#include "manipulateur.h"
 #include "mot.h"
 
 
@@ -74,7 +73,7 @@ int main()
 //
 //  }while(c_essaie != '#');
 
-  system("pause");
+  int i; cin >> i;
   return 0;
 }
 
