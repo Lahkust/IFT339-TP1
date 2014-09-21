@@ -60,7 +60,23 @@ mot dictionnaire::mot_aleatoire()
   return map_dictionnaire.find(uint_dist(rng))->second; //Génère concrètement l'index aléatoire et retourne le mot associé
 }
 
-void dictionnaire::comparer(char)
+void dictionnaire::comparer(char lettre)
 {
+  mot& mot_cible = map_dictionnaire.find(indice_mot_cible)->second;
+  actualiser_lettres(lettre);
+
+  if(lettre_presente(lettre))
+  {
+
+
+  }
+  else
+  {
+
+  }
+
+    for(size_t i = 0; i < test.size(); ++i)
+      if(mot_cible.at(i)==lettre)
+        etat_actuel.at(i)=lettre;
 
 }

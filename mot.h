@@ -4,19 +4,23 @@
 #include <string>
 using namespace std;
 
-class mot
+class mot : public string
 {
 
 private :
 
 public:
-
- string value;
-    bool operator==(mot);
-    mot(void);
-    mot(string);
+    mot();
     mot(uint32_t);
-    ~mot(void);
+    mot(const char*);
+    mot(const string&);
+    ~mot();
+
+    uint32_t size();
+    const char& att(size_t)const;
+
+    char& operator[](size_t);
+    bool operator==(mot);
 };
 
 #endif // MOT_H
