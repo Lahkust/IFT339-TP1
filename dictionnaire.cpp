@@ -21,20 +21,17 @@ void dictionnaire::ouvrir(string ods6, uint32_t taille_mot)
 
 	if (fichier.is_open())
 	{
-		for (uint32_t index = 0; getline (fichier,ligne); index++ )
+		for (uint32_t i = 0; getline (fichier,ligne); i=i )
 		{
 		  if(ligne.length() == taille_mot)
       {
-        map_dictionnaire[index] = mot(ligne);
+        ++i;
+        map_dictionnaire[i] = mot(ligne);
       }
 		}
 		fichier.close();
 	}
 	else cout << "Unable to open file";
-
-	cout << map_dictionnaire.find(uint32_t(0))->second.value;
-
-
 }
 
 void dictionnaire::actualiser_lettres(char lettre)
@@ -47,15 +44,15 @@ void dictionnaire::actualiser_lettres(char lettre)
 bool dictionnaire::lettre_presente(char lettre)
 {
 bool retour = false;
-mot test = map_dictionnaire.find(indice_mot_cible)->second;
-//for(size_t i = 0; i < test.size(); ++i)retour |= (test.at(i) == lettre);
+mot m = map_dictionnaire.find(indice_mot_cible)->second;
+for(size_t i = 0; i < m.size(); ++i)retour |= (m.at(i) == lettre);
 return retour;
 }
 
 mot dictionnaire::mot_aleatoire()
 {
   mt19937 rng;          // Crée un générateur de nombre aléatoires (standard C++11)
-  rng.seed(uint32_t()); // Initialisation à l'aide d'une graine elle-même aléatoire (la scrap en mémoire)
+  rng.seed(uint32_t(42)); // Initialisation à l'aide d'une graine
   uniform_int_distribution<uint32_t> uint_dist(0,map_dictionnaire.size()); //Définit les limites du rng
   return map_dictionnaire.find(uint_dist(rng))->second; //Génère concrètement l'index aléatoire et retourne le mot associé
 }
@@ -75,8 +72,26 @@ void dictionnaire::comparer(char lettre)
 
   }
 
-    for(size_t i = 0; i < test.size(); ++i)
+    for(size_t i = 0; i < mot_cible.size(); ++i)
       if(mot_cible.at(i)==lettre)
         etat_actuel.at(i)=lettre;
 
 }
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+void dictionnaire::afficher()
+{uint32_t sizedic = map_dictionnaire.size();
+  for(uint32_t i=0; i<sizedic; ++i)
+    cout << "Mot n" << i << " : " << map_dictionnaire.find(i)->second.tostring()<<endl;
+
+}
+

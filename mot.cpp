@@ -1,52 +1,57 @@
 #include "mot.h"
 
 
-mot::mot():string()
+mot::mot()
 {
-
+  value = string();
 }
 
-mot::mot(uint32_t i=0):string(i,'-')
+mot::mot(uint32_t i=0)
 {
-
+    value = string(i,'-');
 }
 
-mot::mot(const char * str):string(str)
+mot::mot(const char * str)
 {
-
+    value = string(str);
 }
 
-mot::mot(const string& str):string(str)
+mot::mot(const string& str)
 {
-
+    value = string(str);
 }
 
-/*uint32_t mot::size()
-{
-
-}*/
-/*
 char& mot::operator[](size_t pos)
 {
-  return this->at(pos);
-
-}*/
-
-const char& mot::att(size_t pos)const
-{
-   return this->at(pos);
+    return value.operator[](pos);
 }
 
-mot::~mot()
+const char& mot::at(size_t pos)const
 {
-
+    return value.at(pos);
 }
+
 
 bool mot::operator==(mot m)
 {
+    bool retour = false;
 
+    if( m.size() == value.size() )
+        {
+            retour = true;
+            for(size_t i = 0; i<m.size() ; ++i)
+                retour &= (m.at(i) == value.at(i));
+        }
+    return retour;
+}
 
+uint32_t mot::size()
+{
+  return value.size();
 }
 
 
-
+    const string mot::tostring()
+    {
+      return value;
+    }
